@@ -1,0 +1,128 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[dvips]{epsfig}
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage{comment}
+
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.2cm, right=2.2cm]%
+{geometry}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{changepage}
+\usepackage{amssymb}
+
+\setcounter{MaxMatrixCols}{30}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+
+\title{Assignment 01}
+\author{Kang Jin Lee}
+\date{\today}
+\maketitle
+\section{Git Tutorial}
+
+	I try to make this document for understanding git command
+  
+\subsection{Git Configuration}
+
+	If you use git first time insert your name and e mail for configuration
+\begin{align}
+git \quad config --global \quad user.name \quad"NAME" \\
+git \quad config -- global \quad user.email\quad  EMAIL\quad   
+\end{align}
+ Enter your name to NAME in command (1) \\
+ Enter your email in EMAIL command(2)
+
+\begin{align}
+\end{align}
+
+
+
+\subsection{Git Start}
+       you can make git repository as this command(4).
+\begin{align}
+git \quad init
+\end{align}
+
+
+\subsection{Git Modification}
+		If you make a git repository you need next step.\\
+		you add a first file as this command(5)
+\begin{align}
+git \quad add FILENAME
+\end{align}
+		and you can check your git state as this command(6)
+\begin{align}
+gir \quad status
+\end{align}
+		and if you chage the code of git repository. \\
+		first you need to write down the comment 
+\begin{align}
+git \quad commit \\
+git \quad commit -m \quad "comment "
+\end{align}
+if you have any git editor, command (7) is better. \\
+but if you have not git editor just use the command (8)
+
+\subsection{Git Management}
+	you can download git repository to your local computer as this command(9)
+\begin{align}
+git \quad clone "HOSTADDRESS"
+\end{align}
+		If you commit the code than you can push your code to git repository
+		\\ It will push in master branch		
+		as this command (10)
+\begin{align}
+git \quad push \quad orgin \quad master
+\end{align}
+		and you can get the modication code to your local computer using this command (11)
+\begin{align}
+git \quad pull 
+\end{align} 
+and you can make the branch that it want to try in a diffrent direction than the orginal code
+\begin{align}
+git \quad checkout \quad -b \quad BRANCHNAME
+\end{align}
+		
+
+\begin{figure}[!h]
+%\centering
+%\includegraphics[scale=0.2]{./a.eps}
+\end{figure}
+                       
+  
+  
+  
+
+
+
+
+\end{document}
